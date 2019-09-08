@@ -1,0 +1,29 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: web-user
+  datasource:
+    url: jdbc:mysql:///wechat
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 192.168.118.168
+    password: root
+    port: 6379
+  rabbitmq:
+    host: 192.168.118.168
+    virtual-host: /
+    port: 5672
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+fdfs:
+  pool:
+    jmx-enabled: false
+  thumb-image:
+    width: 80
+    height: 80
+  tracker-list: 192.168.118.168:22122

@@ -1,0 +1,12 @@
+netty:
+  ip: 127.0.0.1
+  port: 20000
+spring:
+  rabbitmq:
+    host: 192.168.118.168
+    virtual-host: /
+    port: 5672
+  redis:
+    host: 192.168.118.168
+    password: root
+    port: 6379
